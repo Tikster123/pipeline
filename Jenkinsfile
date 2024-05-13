@@ -51,7 +51,8 @@ pipeline {
                     emailext (
                         to: 'tanmayshete35@gmail.com',
                         subject: 'Deployment Successful',
-                        body: 'The deployment was successful. Please verify.'
+                        body: 'The deployment was successful. Please verify.',
+                        attachmentsPattern:'**/*.log'
                      )
                  }
             }
